@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+    <servlet>
+        <servlet-name>ServletJdbc</servlet-name>
+        <servlet-class>servlets.ServletJdbc</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletJdbc</servlet-name>
+        <url-pattern>/servlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>CreatePlayer</servlet-name>
+        <jsp-file>/createplayer.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreatePlayer</servlet-name>
+        <url-pattern>/create</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>DeletePlayer</servlet-name>
+        <jsp-file>/delete.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeletePlayer</servlet-name>
+        <url-pattern>/delete</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>UpdatePlayer</servlet-name>
+        <jsp-file>/update.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdatePlayer</servlet-name>
+        <url-pattern>/update</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>UpdateNickname</servlet-name>
+        <jsp-file>/updatenickname.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateNickname</servlet-name>
+        <url-pattern>/updatenickname.jsp</url-pattern>
+    </servlet-mapping>
+</web-app>
